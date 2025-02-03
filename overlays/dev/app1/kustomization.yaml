@@ -1,0 +1,20 @@
+resources:
+- ../cross-components
+
+commonLabels:
+  app: rabbitmq
+
+namePrefix: rabbitmq
+namespace: azure-store
+
+images:
+  - name: main
+    newName: mcr.microsoft.com/mirror/docker/library/rabbitmq
+    newTag: 3.10-management-alpine
+
+patches:
+- target:
+    version: v1
+    kind: Deployment
+    name: -deploy
+  path: healthcheck_patch.yaml

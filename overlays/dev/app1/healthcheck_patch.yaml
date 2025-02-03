@@ -1,0 +1,10 @@
+- op: replace #action 
+  path: /spec/replicas #resource we want to change
+  value: 5
+- op: add
+  path: /spec/template/spec/containers/0/ports
+  value:
+    - containerPort: 5672
+      name: rabbitmq-amqp
+    - containerPort: 15672
+      name: rabbitmq-http  

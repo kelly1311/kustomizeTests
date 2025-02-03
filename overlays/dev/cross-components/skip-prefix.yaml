@@ -1,0 +1,6 @@
+namePrefix:
+  - path: metadata/name
+    kind: Deployment
+  - path: metadata/name
+    kind: Service
+
