@@ -1,6 +1,6 @@
 - op: replace #action 
   path: /spec/replicas #resource we want to change
-  value: 1
+  value: 3
 - op: add
   path: /spec/template/spec/containers/0/ports
   value:
