@@ -10,7 +10,7 @@ namespace: azure-store
 images:
   - name: main
     newName: mcr.microsoft.com/mirror/docker/library/rabbitmq
-    newTag: 3.10-management-alpine
+    newTag: 3.1
 
 patches:
 - target:
